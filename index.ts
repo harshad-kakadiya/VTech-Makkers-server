@@ -8,16 +8,16 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
     : [];
 dotenv.config();
 const log = (message: string) => console.log(`[server] ${message}`);
-
+// {
+//   origin: allowedOrigins,
+//   credentials: true,
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'X-Requested-With', 'Accept'],
+//   exposedHeaders: ['Content-Range', 'Accept-Ranges', 'Content-Length'],
+//   maxAge: 86400 // 24 hours
+// }
 const app = express();
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'X-Requested-With', 'Accept'],
-  exposedHeaders: ['Content-Range', 'Accept-Ranges', 'Content-Length'],
-  maxAge: 86400 // 24 hours
-}));
+app.use(cors());
 
 // Add middleware to handle preflight requests and set appropriate headers
 app.use((req, res, next) => {
