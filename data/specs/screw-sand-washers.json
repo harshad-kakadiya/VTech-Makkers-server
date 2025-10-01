@@ -1,0 +1,29 @@
+[
+  {
+    "Model": "VTSW 1",
+    "ScrewLength_m": "6",
+    "ScrewDiameter_mm": "600",
+    "Configuration": "Single",
+    "Capacity_TPH": "50 – 80",
+    "Power_HP": "15",
+    "Power_kW": "11"
+  },
+  {
+    "Model": "VTSW 2",
+    "ScrewLength_m": "9",
+    "ScrewDiameter_mm": "900",
+    "Configuration": "Single",
+    "Capacity_TPH": "80 – 120",
+    "Power_HP": "20",
+    "Power_kW": "15"
+  },
+  {
+    "Model": "VTSW 3",
+    "ScrewLength_m": "9",
+    "ScrewDiameter_mm": "900",
+    "Configuration": "Double",
+    "Capacity_TPH": "120 – 200",
+    "Power_HP": "30",
+    "Power_kW": "22"
+  }
+]

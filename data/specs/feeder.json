@@ -1,0 +1,47 @@
+[
+  {
+    "Model": "VT-P1",
+    "Type": "Pan",
+    "Size_mm": "800×1600",
+    "Capacity_TPH": "50–100",
+    "Power_HP": "2×1.5",
+    "Power_kW": "3 / 4",
+    "MotorType": "Unbalanced vibro"
+  },
+  {
+    "Model": "VT-P2",
+    "Type": "Pan",
+    "Size_mm": "800×2000",
+    "Capacity_TPH": "80–150",
+    "Power_HP": "2×2.2",
+    "Power_kW": "4.4 / 6",
+    "MotorType": "Unbalanced vibro"
+  },
+  {
+    "Model": "VT-G1",
+    "Type": "Grizzly",
+    "Size_mm": "1000×3000",
+    "Capacity_TPH": "150–350",
+    "Power_HP": "2×3.7",
+    "Power_kW": "7.5 / 10",
+    "MotorType": "Unbalanced vibro"
+  },
+  {
+    "Model": "VT-G2",
+    "Type": "Grizzly",
+    "Size_mm": "1200×4500",
+    "Capacity_TPH": "300–600",
+    "Power_HP": "2×5.5",
+    "Power_kW": "11 / 15",
+    "MotorType": "Unbalanced vibro"
+  },
+  {
+    "Model": "VT-G3",
+    "Type": "Grizzly",
+    "Size_mm": "1600×5000",
+    "Capacity_TPH": "500–800",
+    "Power_HP": "2×7.5",
+    "Power_kW": "15 / 20",
+    "MotorType": "Unbalanced vibro"
+  }
+]

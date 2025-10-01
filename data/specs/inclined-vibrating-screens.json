@@ -1,0 +1,86 @@
+{
+  "InclinedScreens": [
+    {
+      "Model": "VTIS 1",
+      "ScreenType": "Inclined",
+      "Size_ft": "12×4",
+      "Size_mm": "3658×1219",
+      "Power_HP": "10–15",
+      "Power_kW": "7–11",
+      "Throughput_TPH": "60–120",
+      "DeckInfo": "2 / 3 / 4 decks"
+    },
+    {
+      "Model": "VTIS 2",
+      "ScreenType": "Inclined",
+      "Size_ft": "14×5",
+      "Size_mm": "4267×1524",
+      "Power_HP": "15–20",
+      "Power_kW": "11–15",
+      "Throughput_TPH": "90–180",
+      "DeckInfo": "2 / 3 / 4 decks"
+    },
+    {
+      "Model": "VTIS 3",
+      "ScreenType": "Inclined",
+      "Size_ft": "16×5",
+      "Size_mm": "4877×1524",
+      "Power_HP": "20–25",
+      "Power_kW": "15–19",
+      "Throughput_TPH": "120–240",
+      "DeckInfo": "2 / 3 / 4 decks"
+    },
+    {
+      "Model": "VTIS 4",
+      "ScreenType": "Inclined",
+      "Size_ft": "18×5",
+      "Size_mm": "5486×1524",
+      "Power_HP": "25–30",
+      "Power_kW": "19–22",
+      "Throughput_TPH": "150–300",
+      "DeckInfo": "2 / 3 / 4 decks"
+    },
+    {
+      "Model": "VTIS 5",
+      "ScreenType": "Inclined",
+      "Size_ft": "20×6",
+      "Size_mm": "6096×1829",
+      "Power_HP": "30–40",
+      "Power_kW": "22–30",
+      "Throughput_TPH": "200–400",
+      "DeckInfo": "2 / 3 / 4 decks"
+    }
+  ],
+  "GrizzlyScreens": [
+    {
+      "Model": "VTG 1",
+      "ScreenType": "Grizzly",
+      "Size_ft": "10×15",
+      "Size_mm": "3048×1524",
+      "Power_HP": "74",
+      "Power_kW": "55",
+      "Throughput_TPH": "150–250",
+      "DeckInfo": "Single heavy-duty bars"
+    },
+    {
+      "Model": "VTG 2",
+      "ScreenType": "Grizzly",
+      "Size_ft": "12×5",
+      "Size_mm": "3658×1524",
+      "Power_HP": "30",
+      "Power_kW": "22",
+      "Throughput_TPH": "250–350",
+      "DeckInfo": "Single heavy-duty bars"
+    },
+    {
+      "Model": "VTG 3",
+      "ScreenType": "Grizzly",
+      "Size_ft": "15×5",
+      "Size_mm": "4572×1524",
+      "Power_HP": "40",
+      "Power_kW": "30",
+      "Throughput_TPH": "300–500",
+      "DeckInfo": "Single heavy-duty bars"
+    }
+  ]
+}

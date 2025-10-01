@@ -1,0 +1,26 @@
+[
+  {
+    "Model": "VTHI 1",
+    "FeedOpening_mm": "600×600",
+    "MaxFeedSize_mm": 200,
+    "Power_HP": "110–130",
+    "Power_kW": "82–97",
+    "Throughput_TPH": "60–100"
+  },
+  {
+    "Model": "VTHI 2",
+    "FeedOpening_mm": "800×1000",
+    "MaxFeedSize_mm": 250,
+    "Power_HP": "160–190",
+    "Power_kW": "120–142",
+    "Throughput_TPH": "90–150"
+  },
+  {
+    "Model": "VTHI 3",
+    "FeedOpening_mm": "1200×1000",
+    "MaxFeedSize_mm": 350,
+    "Power_HP": "230–280",
+    "Power_kW": "170–210",
+    "Throughput_TPH": "160–250"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Model": "BC-12",
+    "WheelØ_mm": "2800",
+    "Capacity_TPH": "50-80",
+    "NumBuckets": "12",
+    "Power_HP": "15",
+    "Power_kW": "11"
+  },
+  {
+    "Model": "BC-14",
+    "WheelØ_mm": "3000",
+    "Capacity_TPH": "80-110",
+    "NumBuckets": "14",
+    "Power_HP": "20",
+    "Power_kW": "15"
+  },
+  {
+    "Model": "BC-16",
+    "WheelØ_mm": "3200",
+    "Capacity_TPH": "110-150",
+    "NumBuckets": "16",
+    "Power_HP": "25",
+    "Power_kW": "18.5"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "Model": "HC-1",
+    "CycloneØ_mm": "325",
+    "SlurryPump_in": "3×2",
+    "DewateringScreen_mm": "1200×2400",
+    "Capacity_TPH": "25–60",
+    "Power_HP": "30–40",
+    "Power_kW": "22–30"
+  },
+  {
+    "Model": "HC-2",
+    "CycloneØ_mm": "400",
+    "SlurryPump_in": "6×4",
+    "DewateringScreen_mm": "1800×2700",
+    "Capacity_TPH": "60–100",
+    "Power_HP": "50–75",
+    "Power_kW": "37–55"
+  },
+  {
+    "Model": "HC-3",
+    "CycloneØ_mm": "500",
+    "SlurryPump_in": "8×6",
+    "DewateringScreen_mm": "1800×4200",
+    "Capacity_TPH": "120–160",
+    "Power_HP": "75–110",
+    "Power_kW": "75–90"
+  }
+]

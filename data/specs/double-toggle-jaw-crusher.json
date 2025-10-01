@@ -1,0 +1,13 @@
+[
+  {"Model":"VTDT 1","Size_in":"20×12","Size_mm":"500×300","MaxFeed_mm":175,"MaxFeed_in":7,"Power_HP":"20–30","Power_kW":"15–22","CSS_mm":"12–40","Lubrication":"Oil","Capacity_TPH":"16–35","RPM":375},
+  {"Model":"VTDT 2","Size_in":"24×12","Size_mm":"600×300","MaxFeed_mm":175,"MaxFeed_in":7,"Power_HP":"20–40","Power_kW":"15–30","CSS_mm":"12–40","Lubrication":"Oil","Capacity_TPH":"16–40","RPM":375},
+  {"Model":"VTDT 3","Size_in":"30×09","Size_mm":"750×225","MaxFeed_mm":175,"MaxFeed_in":7,"Power_HP":"30–45","Power_kW":"22–34","CSS_mm":"18–39","Lubrication":"Oil","Capacity_TPH":"18–39","RPM":325},
+  {"Model":"VTDT 4","Size_in":"30×15","Size_mm":"750×375","MaxFeed_mm":325,"MaxFeed_in":13,"Power_HP":"35–50","Power_kW":"26–37","CSS_mm":"25–85","Lubrication":"Oil","Capacity_TPH":"28–55","RPM":325},
+  {"Model":"VTDT 5","Size_in":"30×20","Size_mm":"750×500","MaxFeed_mm":450,"MaxFeed_in":18,"Power_HP":"40–60","Power_kW":"30–45","CSS_mm":"32–95","Lubrication":"Oil","Capacity_TPH":"32–95","RPM":250},
+  {"Model":"VTDT 6","Size_in":"36×08","Size_mm":"900×200","MaxFeed_mm":175,"MaxFeed_in":7,"Power_HP":"40–60","Power_kW":"30–45","CSS_mm":"28–95","Lubrication":"Oil","Capacity_TPH":"23–40","RPM":325},
+  {"Model":"VTDT 7","Size_in":"36×24","Size_mm":"900×600","MaxFeed_mm":500,"MaxFeed_in":22,"Power_HP":"80–100","Power_kW":"60–75","CSS_mm":"35–125","Lubrication":"Oil","Capacity_TPH":"75–125","RPM":250},
+  {"Model":"VTDT 8","Size_in":"36×30","Size_mm":"900×750","MaxFeed_mm":600,"MaxFeed_in":24,"Power_HP":"100–120","Power_kW":"75–90","CSS_mm":"42–140","Lubrication":"Oil","Capacity_TPH":"42–140","RPM":250},
+  {"Model":"VTDT 10","Size_in":"42×08","Size_mm":"1050×205","MaxFeed_mm":150,"MaxFeed_in":6,"Power_HP":"50–70","Power_kW":"37–52","CSS_mm":"33–87","Lubrication":"Oil","Capacity_TPH":"33–37","RPM":350},
+  {"Model":"VTDT 11","Size_in":"42×30","Size_mm":"1050×750","MaxFeed_mm":600,"MaxFeed_in":24,"Power_HP":"120–150","Power_kW":"90–112","CSS_mm":"42–200","Lubrication":"Oil","Capacity_TPH":"150–225","RPM":250},
+  {"Model":"VTDT 12","Size_in":"48×36","Size_mm":"1200×900","MaxFeed_mm":725,"MaxFeed_in":25,"Power_HP":"150–200","Power_kW":"112–150","CSS_mm":"48–275","Lubrication":"Oil","Capacity_TPH":"230–350","RPM":250}
+]

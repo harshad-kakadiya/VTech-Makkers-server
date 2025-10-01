@@ -1,0 +1,26 @@
+[
+  {
+    "Model": "CubiSand 1",
+    "RotorDiameter_mm": 750,
+    "Throughput_TPH": "50–80",
+    "Power_HP": "100–120",
+    "Power_kW": "75–90",
+    "MaxFeedSize_mm": 25
+  },
+  {
+    "Model": "CubiSand 2",
+    "RotorDiameter_mm": 850,
+    "Throughput_TPH": "80–120",
+    "Power_HP": "150–180",
+    "Power_kW": "110–135",
+    "MaxFeedSize_mm": 30
+  },
+  {
+    "Model": "CubiSand 3",
+    "RotorDiameter_mm": 950,
+    "Throughput_TPH": "120–160",
+    "Power_HP": "2×200–240",
+    "Power_kW": "2×150–180",
+    "MaxFeedSize_mm": 35
+  }
+]

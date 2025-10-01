@@ -1,0 +1,41 @@
+{
+  "title": "Turnkey Solutions",
+  "subtitle": "Complete Plant Solutions Built for Maximum Efficiency",
+  "description": "End-to-end turnkey plant solutions from concept to commissioning, delivering complete crushing, screening, and washing facilities tailored to your operational requirements.",
+  "hero": {
+    "title": "Turnkey Solutions Built for Maximum Uptime & Quality",
+    "description": "Complete plant engineering, manufacturing, and installation services with guaranteed performance outcomes"
+  },
+  "equipment": [
+    "single-toggle-jaw-crusher",
+    "double-toggle-jaw-crusher", 
+    "hsi-impactors",
+    "inclined-vibrating-screens",
+    "conveyor-systems",
+    "feeders"
+  ],
+  "applications": [
+    {
+      "name": "Complete Plant Engineering",
+      "description": "Full plant design and engineering services from initial concept through detailed engineering drawings",
+      "icon": "EN"
+    },
+    {
+      "name": "Project Management",
+      "description": "Comprehensive project management ensuring on-time delivery and budget compliance",
+      "icon": "PM"
+    },
+    {
+      "name": "Installation & Commissioning",
+      "description": "Professional installation and commissioning services with performance guarantees",
+      "icon": "IC"
+    }
+  ],
+  "process": [
+    "Site assessment and feasibility study",
+    "Custom plant design and engineering",
+    "Equipment manufacturing and testing", 
+    "Installation and commissioning",
+    "Training and ongoing support"
+  ]
+}
