@@ -227,6 +227,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+
+  app.get("/api/status", async (req, res) => {
+    try {
+      const uptime = process.uptime(); // seconds since server started
+      const environment = process.env.NODE_ENV || 'development';
+
+      res.status(200).json({
+        success: true,
+        message: "VTech Makkers API is running",
+        data: {
+          uptime: `${Math.floor(uptime)}s`,
+          environment,
+          timestamp: new Date().toISOString()
+        }
+      });
+    } catch (error) {
+      console.error('Error in /api/status:', error);
+
+      res.status(500).json({
+        success: false,
+        message: "Failed to get API status",
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  });
+
+
   // GraphQL-style query endpoint for products
   app.post("/api/graphql", async (req, res) => {
     try {
