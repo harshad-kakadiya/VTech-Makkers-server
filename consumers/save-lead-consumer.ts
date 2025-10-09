@@ -7,24 +7,23 @@ import { storage } from '../storage';
  */
 async function saveLeadToDatabase(event: LeadSubmittedV1Event): Promise<void> {
   try {
-    console.log(`Processing save-lead event for lead ID: ${event.data.leadId}`);
-    
+
     // Prepare lead data for database insertion
     const leadData = {
       name: event.data.name,
       email: event.data.email,
+      message: event.data.message,
       company: event.data.company,
       phone: event.data.phone,
       project_location: event.data.project_location,
       query_text: event.data.query_text,
       matched_products: event.data.matched_products,
+      product_id: event.data.product_id,
     };
     
     // Save lead to PostgreSQL database
     const savedLead = await storage.createLead(leadData);
-    
-    console.log(`Lead ${savedLead.id} successfully saved to database (event ID: ${event.data.leadId})`);
-    
+
     // In a production system, this could also:
     // 1. Validate data integrity
     // 2. Enrich lead data with external sources

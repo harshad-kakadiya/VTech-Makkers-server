@@ -16,6 +16,7 @@ export interface LeadSubmittedV1Event {
     query_text: string;
     product_name?: string;
     product_slug?: string;
+    product_id?: number;
   };
 }
 
@@ -51,11 +52,6 @@ class EventBus extends EventEmitter {
 
   async publish(event: BusinessEvent): Promise<void> {
     try {
-      console.log(`Publishing event: ${event.type}`, {
-        timestamp: event.timestamp,
-        leadId: event.data.leadId
-      });
-      
       // Emit the event asynchronously
       this.emit(event.type, event);
       

@@ -7,8 +7,7 @@ import { storage } from '../storage';
  */
 async function notifySalesTeam(event: LeadSubmittedV1Event): Promise<void> {
   try {
-    console.log(`Processing sales notification for lead ID: ${event.data.leadId}`);
-    
+
     const { data } = event;
     
     // Get product details for the matched products
@@ -29,7 +28,6 @@ async function notifySalesTeam(event: LeadSubmittedV1Event): Promise<void> {
     // In production, this would send to actual email service
     await sendSalesNotificationEmail(emailContent);
     
-    console.log(`Sales notification sent successfully for lead ${event.data.leadId}`);
   } catch (error) {
     console.error(`Failed to send sales notification for lead ${event.data.leadId}:`, error);
     
@@ -66,14 +64,6 @@ Original Query: ${leadData.query_text}
 
 async function sendSalesNotificationEmail(content: string): Promise<void> {
   // Mock email sending - in production would use AWS SES, SendGrid, etc.
-  console.log('=== SALES TEAM NOTIFICATION ===');
-  console.log('To: sales-team@industrialmax.com');
-  console.log('CC: technical-support@industrialmax.com');
-  console.log('Subject: 🔥 New Technical Inquiry - Immediate Response Required');
-  console.log('\n' + content);
-  console.log('=== END NOTIFICATION ===');
-  
-  // Simulate email service delay
   await new Promise(resolve => setTimeout(resolve, 100));
 }
 

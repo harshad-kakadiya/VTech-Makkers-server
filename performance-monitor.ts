@@ -24,8 +24,7 @@ export class VideoPerformanceMonitor {
       
       res.send = function(body) {
         const firstByteTime = Date.now() - startTime;
-        console.log(`[PERF] ${req.path} - First byte: ${firstByteTime}ms`);
-        
+
         // Alert if over target
         if (firstByteTime > 250) {
           console.warn(`[PERF WARNING] ${req.path} exceeded 250ms target: ${firstByteTime}ms`);
@@ -36,8 +35,7 @@ export class VideoPerformanceMonitor {
       
       res.end = function(chunk?: any, encoding?: BufferEncoding) {
         const firstByteTime = Date.now() - startTime;
-        console.log(`[PERF] ${req.path} - Response time: ${firstByteTime}ms`);
-        
+
         return originalEnd.call(this, chunk, encoding);
       };
     }
@@ -65,7 +63,6 @@ export class VideoPerformanceMonitor {
       return false;
     }
     
-    console.log('[PERF] Video optimization files validated ✓');
     return true;
   }
   

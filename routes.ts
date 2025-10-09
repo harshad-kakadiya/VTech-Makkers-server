@@ -92,6 +92,7 @@ export const industries: Industry[] = [
 // Import consumers to register event handlers
 import "./consumers/save-lead-consumer";
 import "./consumers/notify-sales-consumer";
+import {db} from "./db.ts";
 
 // Transformer function to convert article data to JSON-LD format
 function transformArticleToJsonLD(article: any): any {
@@ -248,6 +249,40 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({
         success: false,
         message: "Failed to get API status",
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  });
+
+  app.get("/api/health/db", async (req, res) => {
+    const startTime = Date.now();
+
+    try {
+      // Execute health check query
+      await db.execute("SELECT 1");
+      const responseTime = Date.now() - startTime;
+
+      res.status(200).json({
+        success: true,
+        message: "Database connection is healthy",
+        data: {
+          status: 'connected',
+          responseTime: `${responseTime}ms`,
+          timestamp: new Date().toISOString()
+        }
+      });
+    } catch (error) {
+      const responseTime = Date.now() - startTime;
+      console.error("Database health check failed:", error);
+
+      res.status(503).json({
+        success: false,
+        message: "Database connection failed",
+        data: {
+          status: 'disconnected',
+          responseTime: `${responseTime}ms`,
+          timestamp: new Date().toISOString()
+        },
         error: error instanceof Error ? error.message : String(error)
       });
     }
@@ -502,7 +537,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/leads", async (req, res) => {
     try {
       const validatedData = insertLeadSchema.parse(req.body);
-      
+
       // Generate unique lead ID for event tracking
       const leadId = Date.now(); // In production, use proper UUID
       
@@ -512,7 +547,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
         lead_id: leadId,
         message: "Lead captured successfully. Our expert will contact you within 24 hours." 
       });
-      
       // Publish event asynchronously - this happens after user gets response
       const leadEvent = {
         type: 'LeadSubmittedV1' as const,
@@ -524,15 +558,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
           company: validatedData.company || '',
           phone: req.body.phone,
           project_location: validatedData.project_location || '',
-          message: req.body.message || validatedData.query_text,
+          message: req.body.message || validatedData.message,
           matched_products: validatedData.matched_products || [],
           query_text: validatedData.query_text,
           product_name: req.body.product_name,
-          product_slug: req.body.product_slug
+          product_slug: req.body.product_slug,
+          product_id: validatedData.product_id
         }
       };
-      console.log(leadEvent,"ssssssssssssss")
-      
+
       // Fire event to trigger independent consumers
       setImmediate(async () => {
         try {
