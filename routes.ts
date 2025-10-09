@@ -531,6 +531,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           product_slug: req.body.product_slug
         }
       };
+      console.log(leadEvent,"ssssssssssssss")
       
       // Fire event to trigger independent consumers
       setImmediate(async () => {
