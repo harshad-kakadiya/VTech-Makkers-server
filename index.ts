@@ -51,7 +51,29 @@ app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   log(`Error: ${message}`);
   res.status(status).json({ message });
 });
+app.use((req: Request, res: Response) => {
+  // Log unknown route (optional)
+  console.warn(`404 Not Found: ${req.method} ${req.originalUrl}`);
 
+  // Return a structured JSON response
+  res.status(404).json({
+    success: false,
+    message: "Endpoint not found",
+    path: req.originalUrl,
+    method: req.method,
+    suggestion: "Check if the endpoint URL is correct or refer to API documentation"
+  });
+});
+
+// Handle any unexpected server errors globally
+app.use((err: any, req: Request, res: Response, next: Function) => {
+  console.error("Unhandled server error:", err);
+  res.status(500).json({
+    success: false,
+    message: "Internal Server Error",
+    error: process.env.NODE_ENV === 'development' ? err.message : undefined,
+  });
+});
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   log(`✅ Server running on port ${PORT}`);
